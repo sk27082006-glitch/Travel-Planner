@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Travel Planner ✈️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007bff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- iOS support -->
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🌍 Agentic Travel Planner</h1>
+    <p>One prompt. One image. Infinite wanderlust.</p>
+
+    <div class="input-group">
+      <label for="prompt">Describe your dream trip:</label>
+      <textarea id="prompt" placeholder="E.g., 3 day cultural trip to Kyoto, Japan with temples and gardens..."></textarea>
+    </div>
+
+    <div class="input-group">
+      <label for="imageInput">Upload inspiration image (optional):</label>
+      <input type="file" id="imageInput" accept="image/*" />
+    </div>
+
+    <button id="generateBtn">✨ Generate Itinerary</button>
+    
+    <div class="status" id="status">Ready to plan your adventure! ✈️</div>
+    
+    <div class="output-container">
+      <label>Your Itinerary:</label>
+      <pre id="output">Enter a prompt above and click generate...</pre>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
